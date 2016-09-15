@@ -1,12 +1,13 @@
 {
     "name": "ruby-method-locate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Finds position of ruby methods/modules/classes in a file. Intended for use in code editors.",
     "keywords": [
         "ruby",
         "parser",
         "development"
     ],
+    "main": "main.js",
     "author": {
         "name": "Hooky",
         "email": "hooky@qrmaster.co.nz",
