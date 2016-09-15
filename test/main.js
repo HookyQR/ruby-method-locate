@@ -10,8 +10,7 @@ describe('parse - main', function() {
         it('finds methods', function() {
             const filename = path.join(__dirname, 'sample', 'basic.rb');
             return parse(filename).then(result => {
-                expect(result).to.have.property(filename);
-                expect(result[filename]).to.eql({
+                expect(result).to.eql({
                     module: {
                         Module: {
                             class: {

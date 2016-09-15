@@ -14,10 +14,8 @@ module.exports = function parse(fileName) {
             let result = parser(stringData);
             delete result.end;
             if (Object.keys(result).length) {
-                resolve(positionalise(stringData, {
-                    [fileName]: result
-                }));
-            } else resolve({});
+                resolve(positionalise(stringData, result));
+            } else resolve();
         });
     });
 };
