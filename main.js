@@ -12,6 +12,7 @@ module.exports = function parse(fileName) {
             if (err) return reject(err);
             const stringData = data.toString();
             let result = parser(stringData);
+            if (!result) return resolve();
             delete result.end;
             if (Object.keys(result).length) {
                 resolve(positionalise(stringData, result));
