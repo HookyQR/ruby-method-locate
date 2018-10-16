@@ -151,7 +151,7 @@ def other!
 end`;
             check(contextString);
         });
-        it("recognises a while", function() {
+        it("recognises two whiles", function() {
             const contextString = `
 def fn
   a = 1 while false
@@ -159,6 +159,29 @@ def fn
     b = 1
     break
   end
+end
+
+def other!
+end`;
+            check(contextString);
+        });
+        it("recognises a single while", function() {
+          const contextString = `
+def fn
+ while true
+    a = 1
+    break
+  end
+end
+
+def other!
+end`;
+            check(contextString);
+        });
+        it("recognises a while modifier", function() {
+          const contextString = `
+def fn
+ a = 1 while false
 end
 
 def other!
