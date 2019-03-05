@@ -165,6 +165,25 @@ def other!
 end`;
             check(contextString);
         });
+        it("recognises multiple whiles in 'odd' arrangements", function() {
+          const contextString = `
+def fn
+    while true
+      b = 1
+      break
+    end
+a = 1 while false
+
+  while true
+    b = 1
+    break
+  end
+end
+
+def other!
+end`;
+          check(contextString);
+      });
         it("recognises a single while", function() {
           const contextString = `
 def fn

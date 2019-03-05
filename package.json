@@ -1,6 +1,6 @@
 {
     "name": "ruby-method-locate",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Finds position of ruby methods/modules/classes in a file. Intended for use in code editors.",
     "keywords": [
         "ruby",
