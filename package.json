@@ -16,8 +16,8 @@
     "repository": "HookyQR/ruby-method-locate",
     "license": "MIT",
     "devDependencies": {
-        "mocha": "^2.5.3",
-        "chai": "^3.5.0"
+        "mocha": "^6.0.2",
+        "chai": "^4.2.0"
     },
     "scripts": {
         "test": "./node_modules/.bin/mocha -u bdd"
